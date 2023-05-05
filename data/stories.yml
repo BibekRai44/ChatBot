@@ -29,7 +29,7 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story : Happy name path
+- story: Happy name path
   steps:
   - intent: greet
   - action: utter_greet
@@ -38,9 +38,13 @@ stories:
   - action: utter_my_name
   - intent: my_name
     entities:
-    - name: "rahul"
+    - name: "Bibek"
+  - slot_was_set:
+      - name: "Bibek"
   - action: utter_mobile_number
   - intent: mobile_number
     entities:
-    - number : "9815070932"
-  - action : utter_thanks
+    - number: "9815070932"
+  - slot_was_set:
+      - number: "9815070932"
+  - action: utter_thanks
