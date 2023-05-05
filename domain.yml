@@ -20,8 +20,18 @@ entities:
   - name
   - number
 
-
-    
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+  
+  number:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: number
 
 responses:
   utter_greet:
