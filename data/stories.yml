@@ -35,3 +35,12 @@ stories:
   - action: utter_greet
   - intent: tell_name
   - action: utter_name
+  - action: utter_my_name
+  - intent: my_name
+    entities:
+    - name: "rahul"
+  - action: utter_mobile_number
+  - intent: mobile_number
+    entities:
+    - number : "9815070932"
+  - action : utter_thanks

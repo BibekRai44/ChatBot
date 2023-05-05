@@ -96,3 +96,15 @@ nlu:
     - what other call you?
     - tell me your name
     - what should i call you?
+
+- intent: my_name
+  examples: |
+    - my name is [bibek]{"entity":"name","values":"bibek"}
+    - people call me [bibek]{"entity":"name","values":"bibek"}
+    - I am known as [bibek]{"entity":"name","values":"bibek"}
+
+- intent: mobile_number
+  examples: |
+    - my mobile number is [9815070932]{"entity":"number"}
+    - [9815070932]{"entity":"number"} is my number
+    - you can call me on [9815070932]{"entity":"number"}
