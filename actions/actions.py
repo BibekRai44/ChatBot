@@ -13,6 +13,23 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import webbrowser
 
+from rasa_sdk.interfaces import Tracker
+from rasa_sdk.types import DomainDict
+
+class ActionVideo(Action):
+    def name(self) -> Text:
+        return "action_video"
+
+    async def run(
+        self,
+        dispatcher,
+        tracker: Tracker,
+        domain: "DomainDict",
+    ) -> List[Dict[Text, Any]]:
+        video_url="hhttps://youtu.be/dQw4w9WgXcQ"
+        dispatcher.utter_message("Playing your video - - - -")
+        webbrowser.open(video_url)
+        return []
 
 class ValidateRestaurantForm(Action):
     def name(self) -> Text:

@@ -108,3 +108,10 @@ nlu:
     - my mobile number is [9815070932]{"entity":"number"}
     - [9815070932]{"entity":"number"} is my number
     - you can call me on [9815070932]{"entity":"number"}
+
+- intent: play_video
+  examples: |
+    - play the mentioned video
+    - open the url
+    - open the mentioned link
+    - shoe me the video that i asked for
