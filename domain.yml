@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - tell_name
   - play_video
+  - out_of_scope
   - my_name:
       use_entities:
         - name
@@ -68,7 +69,8 @@ responses:
 
   utter_details_thanks:
     - text: "Thanks for providing the given details:\nName: {Name}\nMobile Number: {Mobile_number}"
-
+  utter_out_of_scope:
+    - text: "Sorry I dign'y get what you said? Can you repharse it again?"
 actions:
   - action_submit
   - action_video
