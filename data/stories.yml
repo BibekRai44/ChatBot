@@ -23,6 +23,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - checkpoint: play_action_checkpoint
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -31,6 +32,7 @@ stories:
 
 - story: play video path
   steps:
+  - checkpoint: play_action_checkpoint
   - intent: play_video
   - action: action_video
 #- story: Happy name path

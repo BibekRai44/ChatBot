@@ -26,7 +26,7 @@ class ActionVideo(Action):
         tracker: Tracker,
         domain: "DomainDict",
     ) -> List[Dict[Text, Any]]:
-        video_url="hhttps://youtu.be/dQw4w9WgXcQ"
+        video_url="https://youtu.be/dQw4w9WgXcQ"
         dispatcher.utter_message("Playing your video - - - -")
         webbrowser.open(video_url)
         return []
