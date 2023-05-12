@@ -121,3 +121,15 @@ nlu:
     - I want to order food
     - What is 2 + 2?
     - Who's the US President?
+
+- intent: chitchat/ask_name
+  examples: |
+    - May I know your name?
+    - Can you tell me what is your name?
+    - what is your name?
+    - please tell me your name
+- intent: chitchat/ask_weather
+  examples: |
+    - what is today weather like?
+    - can you tell me today weather?
+    - Is it hot today?

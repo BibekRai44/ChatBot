@@ -11,6 +11,7 @@ intents:
   - tell_name
   - play_video
   - out_of_scope
+  - chitchat
   - my_name:
       use_entities:
         - name
@@ -71,6 +72,14 @@ responses:
     - text: "Thanks for providing the given details:\nName: {Name}\nMobile Number: {Mobile_number}"
   utter_out_of_scope:
     - text: "Sorry I dign'y get what you said? Can you repharse it again?"
+  utter_chitchat/ask_name:
+    - image: "https://cdn.vox-cdn.com/thumbor/WR9hE8wvdM4hfHysXitls9_bCZI=/0x0:1192x795/1400x1400/filters:focal(596x398:597x399)/cdn.vox-cdn.com/uploads/chorus_asset/file/22312759/rickroll_4k.jpg"
+      text: Hi I am bot developed by Bibek Rai.
+    - text: I am bot developed by Bibek Rai.
+  utter_chitchat/ask_weather:
+    - text: "I am not sure what's the today weather is."
+      image: "https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg"
+    - text: "Nepal is hot in weather."
 actions:
   - action_submit
   - action_video

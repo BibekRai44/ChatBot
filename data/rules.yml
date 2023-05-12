@@ -35,3 +35,7 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_out_of_scope
+- rule: respond_to_chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
